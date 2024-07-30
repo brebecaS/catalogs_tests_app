@@ -9,16 +9,8 @@ function App() {
   return (
     <div className="wrapper">
       <Titlu title={"Catalogs"} />
-      <Catalog
-        title={"First Catalog"}
-        numeElev={"John"}
-        listaElevi={listaElevi}
-      />
-      <Catalog
-        title={"Second Catalog"}
-        numeElev={"Rebeca"}
-        listaElevi={listaElevi2}
-      />
+      <Catalog title={"First Catalog"} listaElevi={listaElevi} />
+      <Catalog title={"Second Catalog"} listaElevi={listaElevi2} />
     </div>
   );
 }
