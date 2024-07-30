@@ -1,5 +1,6 @@
 import "./App.css";
 import Catalog from "./Catalog";
+import Titlu from "./Titlu";
 
 function App() {
   const listaElevi = ["REbeca", "Andrei", "Ioan"];
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h1>Catalogs</h1>
+      <Titlu title={"Catalogs"} />
       <Catalog
         title={"First Catalog"}
         numeElev={"John"}
