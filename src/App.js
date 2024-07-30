@@ -8,6 +8,18 @@ function App() {
 
   return (
     <div className="wrapper">
+      <div className="container blue">
+        <h2>Test 1</h2>
+        <div className="questions">
+          <section>
+            <div className="closed">
+              <h4>Question text</h4>
+              <button>+</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <Titlu title={"Catalogs"} />
       <Catalog title={"First Catalog"} listaElevi={listaElevi} />
       <Catalog title={"Second Catalog"} listaElevi={listaElevi2} />
