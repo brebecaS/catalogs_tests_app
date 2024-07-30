@@ -29,8 +29,13 @@
   background-color: #ccc;
 }
 
-.container {
+.magenta {
   background-color: rgb(167, 10, 184);
+}
+.blue {
+  background-color: rgb(8, 143, 152);
+}
+.container {
   max-width: 600px;
   padding: 10px 20px 20px;
   border-radius: 12px;
