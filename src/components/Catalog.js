@@ -1,6 +1,4 @@
-function Catalog(props) {
-  const { listaElevi, title } = props;
-
+function Catalog({ listaElevi, title }) {
   const result = listaElevi.map((element, index) => {
     return (
       <section>

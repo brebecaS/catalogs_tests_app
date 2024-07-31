@@ -1,6 +1,4 @@
-function Test(props) {
-  const { title, questionList } = props;
-
+const Test = ({ title, questionList }) => {
   const result = questionList.map((element) => {
     return (
       <div className="questions">
@@ -22,6 +20,6 @@ function Test(props) {
       {result}
     </div>
   );
-}
+};
 
 export default Test;
