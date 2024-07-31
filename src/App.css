@@ -86,3 +86,7 @@ section > div.closed {
 .open {
   background-color: white;
 }
+
+.hide {
+  display: none;
+}
