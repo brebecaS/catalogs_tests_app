@@ -1,7 +1,7 @@
 function Catalog({ listaElevi, title }) {
   const result = listaElevi.map((element, index) => {
     return (
-      <section>
+      <section key={element}>
         <div className="closed">
           <h4>
             {index + 1}. {element}
