@@ -4,9 +4,9 @@ const Test = ({ title, questionList }) => {
       <div className="questions">
         <section>
           <div className="closed">
-            <h4>{element}</h4>
+            <h4>{element.question}</h4>
             <button>+</button>
-            <p className="hide">7</p>
+            <p className="hide">{element.response}</p>
           </div>
         </section>
       </div>
