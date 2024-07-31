@@ -2,19 +2,14 @@ import "./App.css";
 import Catalog from "./Catalog";
 import Titlu from "./Titlu";
 import Test from "./Test";
+import {
+  questionList,
+  questionList2,
+  listaElevi,
+  listaElevi2,
+} from "../constants";
 
 function App() {
-  const listaElevi = ["REbeca", "Andrei", "Ioan"];
-  const listaElevi2 = ["Ana", "Ioana", "Ioan"];
-  const questionList = ["2 + 5 = ?", "20 - 4 = ?", "-9 -10 = ?"];
-  const questionList2 = [
-    "n ce an a inceput primul razbui mondial ?",
-    "In ce an a avut loc marea unire ?",
-    "Cine e fost domnitorul cu cea mai lunga domnie ?",
-    "Intre ce ani a domnit stefan cel mare ?",
-    "In ce an a intrat romania in primul razboi mondial ?",
-  ];
-
   return (
     <div className="wrapper">
       <Titlu title={"Tests"} />
