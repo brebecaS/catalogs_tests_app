@@ -6,6 +6,7 @@ import Test from "./Test";
 function App() {
   const listaElevi = ["REbeca", "Andrei", "Ioan"];
   const listaElevi2 = ["Ana", "Ioana", "Ioan"];
+  const questionList = ["2 + 5 = ?", "20 - 4 = ?", "-9 -10 = ?"];
 
   return (
     <div className="wrapper">
@@ -58,7 +59,7 @@ function App() {
           </section>
         </div>
       </div>
-      <Test title={"Test de Matematica"} />
+      <Test title={"Test de Matematica"} questionList={questionList} />
 
       <Titlu title={"Catalogs"} />
       <Catalog title={"First Catalog"} listaElevi={listaElevi} />
