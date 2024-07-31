@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      {/* add title 'Tests' */}
+      <Titlu title={"Tests"} />
       <div className="container blue">
         <h2>Test de istorie</h2>
         <div className="questions">
@@ -58,7 +58,7 @@ function App() {
           </section>
         </div>
       </div>
-      <Test />
+      <Test title={"Test de Matematica"} />
 
       <Titlu title={"Catalogs"} />
       <Catalog title={"First Catalog"} listaElevi={listaElevi} />

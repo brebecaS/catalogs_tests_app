@@ -1,7 +1,9 @@
-function Test() {
+function Test(props) {
+  const { title } = props;
+
   return (
     <div className="container blue">
-      <h2>Test de Matematica</h2>
+      <h2>{title}</h2>
       <div className="questions">
         <section>
           <div className="closed">
