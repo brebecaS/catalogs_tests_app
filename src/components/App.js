@@ -1,4 +1,4 @@
-import "./App.css";
+import "../App.css";
 import Catalog from "./Catalog";
 import Titlu from "./Titlu";
 import Test from "./Test";
