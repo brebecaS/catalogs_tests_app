@@ -9,12 +9,15 @@ import {
   listaElevi2,
   content,
 } from "../constants";
+import { Fragment } from "react";
 
 function App() {
+  // false => null undefined 0 "" NaN false
+
   return (
     <div className="wrapper">
       {content === "test" && (
-        <>
+        <Fragment>
           <Titlu title={"Tests"} />
           <Test
             title={"Test de Istorie"}
@@ -22,7 +25,7 @@ function App() {
             color={"red"}
           />
           <Test title={"Test de Matematica"} questionList={mathQuestionList} />
-        </>
+        </Fragment>
       )}
 
       {content === "catalogs" && (
