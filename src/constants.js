@@ -1,5 +1,6 @@
 export const listaElevi = ["REbeca", "Andrei", "Ioan"];
 export const listaElevi2 = ["Ana", "Ioana", "Ioan"];
+export const content = "test";
 export const questionList = [
   {
     question: "2 + 5 = ?",
