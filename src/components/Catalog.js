@@ -1,3 +1,5 @@
+import React from "react";
+
 function Catalog({ listaElevi, title }) {
   const result = listaElevi.map((element, index) => {
     return (

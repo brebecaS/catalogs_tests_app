@@ -13,7 +13,11 @@ function App() {
   return (
     <div className="wrapper">
       <Titlu title={"Tests"} />
-      <Test title={"Test de Istorie"} questionList={historyQuestionList} />
+      <Test
+        title={"Test de Istorie"}
+        questionList={historyQuestionList}
+        color={"red"}
+      />
       <Test title={"Test de Matematica"} questionList={mathQuestionList} />
 
       <Titlu title={"Catalogs"} />
