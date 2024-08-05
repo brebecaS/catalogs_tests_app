@@ -10,34 +10,41 @@ import {
   content,
 } from "../constants";
 import { Fragment } from "react";
+import Tabs from "./Tabs";
 
 function App() {
   // false => null undefined 0 "" NaN falsex
 
-  const newUser = { name: "Ion", age: 20, history: [null] };
+  //   const newUser = { name: "Ion", age: 20, history: [null] };
 
   return (
-    <div className="wrapper">
-      {content === "test" && (
-        <Fragment>
-          <Titlu title={"Tests"} />
-          <Test
-            title={"Test de Istorie"}
-            questionList={historyQuestionList}
-            color={"red"}
-          />
-          <Test title={"Test de Matematica"} questionList={mathQuestionList} />
-        </Fragment>
-      )}
+    <>
+      <Tabs />
+      <div className="wrapper">
+        {content === "test" && (
+          <Fragment>
+            <Titlu title={"Tests"} />
+            <Test
+              title={"Test de Istorie"}
+              questionList={historyQuestionList}
+              color={"blue"}
+            />
+            <Test
+              title={"Test de Matematica"}
+              questionList={mathQuestionList}
+            />
+          </Fragment>
+        )}
 
-      {content === "catalogs" && (
-        <>
-          <Titlu title={"Catalogs"} />
-          <Catalog title={"First Catalog"} listaElevi={listaElevi} />
-          <Catalog title={"Second Catalog"} listaElevi={listaElevi2} />
-        </>
-      )}
-    </div>
+        {content === "catalogs" && (
+          <>
+            <Titlu title={"Catalogs"} />
+            <Catalog title={"First Catalog"} listaElevi={listaElevi} />
+            <Catalog title={"Second Catalog"} listaElevi={listaElevi2} />
+          </>
+        )}
+      </div>
+    </>
   );
 
   //   const result = content === "test" ? "Tests" : "Catalogs";
