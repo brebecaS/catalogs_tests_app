@@ -7,17 +7,36 @@ import {
   questionList2 as historyQuestionList,
   listaElevi,
   listaElevi2,
-  content,
+  //   content,
 } from "../constants";
 import { Fragment } from "react";
-import Tabs from "./Tabs";
+
+import { useState } from "react";
 
 function App() {
-  // false => null undefined 0 "" NaN false
+  let [content, setContent] = useState("catalogs");
 
   return (
     <>
-      <Tabs />
+      <div className={"tab"}>
+        <button
+          className={"tablinks"}
+          onClick={() => {
+            setContent("test"); //  content = "test";
+          }}
+        >
+          Tests
+        </button>
+        <button
+          className={"tablinks"}
+          onClick={() => {
+            setContent("catalogs"); //  content = "catalogs";
+          }}
+        >
+          Catalog
+        </button>
+      </div>
+
       <div className="wrapper">
         {content === "test" && (
           <Fragment>
