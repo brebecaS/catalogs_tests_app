@@ -65,12 +65,17 @@ section {
   background-color: white;
 }
 
-section div,
-section p {
+section div {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 0px;
+}
+
+section p {
+  background-color: white;
   padding: 0 20px;
   margin-top: 0px;
 }

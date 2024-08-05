@@ -12,7 +12,10 @@ import {
 import { Fragment } from "react";
 
 function App() {
-  // false => null undefined 0 "" NaN false
+  // false => null undefined 0 "" NaN falsex
+
+  const newUser = { name: "Ion", age: 20, history: null };
+  console.log(newUser.history?.returns);
 
   return (
     <div className="wrapper">
