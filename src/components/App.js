@@ -13,7 +13,7 @@ import { Fragment } from "react";
 import Tabs from "./Tabs";
 
 function App() {
-  // false => null undefined 0 "" NaN falsex
+  // false => null undefined 0 "" NaN false
 
   return (
     <>

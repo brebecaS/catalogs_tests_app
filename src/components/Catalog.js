@@ -1,4 +1,5 @@
 import React from "react";
+import Wrapper from "./Wrapper";
 
 function Catalog({ listaElevi, title }) {
   const result = listaElevi.map((element, index) => {
@@ -14,10 +15,10 @@ function Catalog({ listaElevi, title }) {
   });
 
   return (
-    <div className="container magenta">
+    <Wrapper>
       <h2>{title}</h2>
       <div className="questions">{result}</div>
-    </div>
+    </Wrapper>
   );
 }
 
