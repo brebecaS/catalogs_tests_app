@@ -15,8 +15,6 @@ import Tabs from "./Tabs";
 function App() {
   // false => null undefined 0 "" NaN falsex
 
-  //   const newUser = { name: "Ion", age: 20, history: [null] };
-
   return (
     <>
       <Tabs />
@@ -70,5 +68,14 @@ function App() {
   //     </div>
   //   );
 }
+
+// Because newUser has no history, newUser.history[0]?.orders needs to be checked for null or undefined with '?.' operator.
+// const newUser = { name: "Ion", age: 20, history: [null] };
+// const user = { name: "Ion", age: 20, history: [{ orders: [1, 2] }] };
+// const usersList = [newUser, user];
+
+// usersList.map((user) => {
+//   return <div>{user.history[0]?.orders}</div>;
+// });
 
 export default App;
