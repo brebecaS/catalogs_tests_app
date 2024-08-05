@@ -14,8 +14,7 @@ import { Fragment } from "react";
 function App() {
   // false => null undefined 0 "" NaN falsex
 
-  const newUser = { name: "Ion", age: 20, history: null };
-  console.log(newUser.history?.returns);
+  const newUser = { name: "Ion", age: 20, history: [null] };
 
   return (
     <div className="wrapper">
