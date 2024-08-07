@@ -7,18 +7,29 @@ import {
   questionList2 as historyQuestionList,
   listaElevi,
   listaElevi2,
-  content,
+  //   content,
 } from "../constants";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 function App() {
+  const [content, setContent] = useState("catalogs");
   return (
     <>
       <div className={"tab"}>
-        <button className={"tablinks"} onClick={() => {}}>
+        <button
+          className={"tablinks"}
+          onClick={() => {
+            setContent("test");
+          }}
+        >
           Tests
         </button>
-        <button className={"tablinks"} onClick={() => {}}>
+        <button
+          className={"tablinks"}
+          onClick={() => {
+            setContent("catalogs");
+          }}
+        >
           Catalog
         </button>
       </div>
