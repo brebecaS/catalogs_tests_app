@@ -7,12 +7,12 @@ import {
   questionList2 as historyQuestionList,
   listaElevi,
   listaElevi2,
-  //   content,
 } from "../constants";
 import { Fragment, useState } from "react";
 
 function App() {
   const [content, setContent] = useState("catalogs");
+
   return (
     <>
       <div className={"tab"}>
