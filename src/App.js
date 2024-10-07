@@ -1,7 +1,15 @@
 import "./App.css";
+import Sum from "./Sum";
 
 function App() {
-  return <>This is a component</>;
+  return (
+    <div>
+      <Sum a="Hello " b="World!" />
+      <Sum a={1} b={2} />
+      <Sum a={3} b={4} />
+      <Sum a={5} b={6} />
+    </div>
+  );
 }
 
 export default App;
