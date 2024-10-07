@@ -1,14 +1,29 @@
 import "./App.css";
-import Sum from "./Sum";
+import Sum from "./sum";
 
 function App() {
   return (
     <div>
-      <Sum a="Hello " b="World!" />
-      <Sum a={1} b={2} />
-      <Sum a={3} b={4} />
-      <Sum a={5} b={6} />
-      <Sum a={6} b={7} />
+      <Sum
+        a="Hello "
+        b="World!"
+      />
+      <Sum
+        a={1}
+        b={2}
+      />
+      <Sum
+        a={3}
+        b={4}
+      />
+      <Sum
+        a={5}
+        b={6}
+      />
+      <Sum
+        a={6}
+        b={7}
+      />
     </div>
   );
 }

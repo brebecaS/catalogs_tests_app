@@ -1,4 +1,5 @@
 import "./App.css";
+import Section from "./Section";
 
 const App2 = () => {
   return (
@@ -7,61 +8,21 @@ const App2 = () => {
       <div className="container">
         <h2>First Catalog</h2>
         <div className="questions">
-          <section>
-            <div className="closed">
-              <h4>1. John</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>2. Job</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>3. Bob</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>4. Maria</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>5. Ioana</h4>
-            </div>
-          </section>
+          <Section name={"1. Clau"} />
+          <Section name={"2. Cata M"} />
+          <Section name={"3. Simo"} />
+          <Section name={"4. Tudor"} />
+          <Section name={"5. George"} />
         </div>
       </div>
       <div className="container">
         <h2>Second Catalog</h2>
         <div className="questions">
-          <section>
-            <div className="closed">
-              <h4>1. Rebeca</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>2. Dan</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>3. David</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>4. Sara</h4>
-            </div>
-          </section>
-          <section>
-            <div className="closed">
-              <h4>5. Iosif</h4>
-            </div>
-          </section>
+          <Section name={"1. Beca"} />
+          <Section name={"2. A Stefan"} />
+          <Section name={"3. Cata"} />
+          <Section name={"4. Mircea"} />
+          <Section name={"5. Cata I"} />
         </div>
       </div>
     </div>
