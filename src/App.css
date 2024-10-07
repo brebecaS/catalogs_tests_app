@@ -29,13 +29,8 @@
   background-color: #ccc;
 }
 
-.magenta {
-  background-color: rgb(167, 10, 184);
-}
-.blue {
-  background-color: rgb(8, 143, 152);
-}
 .container {
+  background-color: rgb(167, 10, 184);
   max-width: 600px;
   padding: 10px 20px 20px;
   border-radius: 12px;
@@ -65,18 +60,12 @@ section {
   background-color: white;
 }
 
-section div {
+section div,
+section p {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 0px;
-}
-
-section p {
-  background-color: white;
-
   padding: 0 20px;
   margin-top: 0px;
 }
@@ -91,8 +80,4 @@ section > div.closed {
 
 .open {
   background-color: white;
-}
-
-.hide {
-  display: none;
 }
