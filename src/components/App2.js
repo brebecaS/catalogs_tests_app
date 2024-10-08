@@ -1,4 +1,4 @@
-import "./App.css";
+import "../App.css";
 import Catalog from "./Catalog";
 import Test from "./Test";
 
@@ -26,4 +26,5 @@ const App2 = () => {
     </div>
   );
 };
+
 export default App2;

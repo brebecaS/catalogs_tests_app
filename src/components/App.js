@@ -1,5 +1,5 @@
-import "./App.css";
-import Sum from "./sum";
+import "../App.css";
+import Sum from "./Sum";
 
 function App() {
   return (
