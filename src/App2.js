@@ -19,40 +19,24 @@ const App2 = () => {
 
       <div className="container blue">
         <h2>Test de Istorie</h2>
-        <div className="questions">
-          <section>
-            <div className="closed">
-              <h4>In ce an a inceput primul razbui mondial ?</h4>
-              <button>+</button>
-              <p className="hide">7</p>
-            </div>
-          </section>
-        </div>
-        <div className="questions">
-          <section>
-            <div className="closed">
-              <h4>In ce an a avut loc marea unire ?</h4>
-              <button>+</button>
-              <p className="hide">7</p>
-            </div>
-          </section>
-        </div>
-        <div className="questions">
-          <section>
-            <div className="closed">
-              <h4>Cine e fost domnitorul cu cea mai lunga domnie ?</h4>
-              <button>+</button>
-              <p className="hide">7</p>
-            </div>
-          </section>
-        </div>
+        <Question questionText={"In ce an a inceput primul razboi mondial ?"} />
+        <Question questionText={"In ce an a avut loc marea unire ?"} />
+        <Question
+          questionText={"Cine e fost domnitorul cu cea mai lunga domnie ?"}
+        />
       </div>
 
       <h1>Catalogs</h1>
 
-      <Catalog studentsArray={studentsList1} title={"First Catalog"} />
+      <Catalog
+        studentsArray={studentsList1}
+        title={"First Catalog"}
+      />
 
-      <Catalog studentsArray={studentsList2} title={"Second Catalog"} />
+      <Catalog
+        studentsArray={studentsList2}
+        title={"Second Catalog"}
+      />
     </div>
   );
 };
