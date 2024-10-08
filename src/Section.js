@@ -2,7 +2,9 @@ const Section = (props) => {
   return (
     <section>
       <div className="closed">
-        <h4>{props.name}</h4>
+        <h4>
+          {props.number}.{props.student}
+        </h4>
       </div>
     </section>
   );
