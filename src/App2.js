@@ -1,5 +1,6 @@
 import "./App.css";
 import Section from "./Section";
+
 const App2 = () => {
   const studentsList1 = ["Clau", "Cata M", "Simo", "Tudor", "George"];
   const studentsElements = studentsList1.map((element, index) => {
@@ -14,11 +15,11 @@ const App2 = () => {
   return (
     <div className="wrapper">
       <h1>Catalogs</h1>
-      <div className="container">
+      <div className="container magenta">
         <h2>First Catalog</h2>
         <div className="questions">{studentsElements}</div>
       </div>
-      <div className="container">
+      <div className="container magenta">
         <h2>Second Catalog</h2>
         <div className="questions">{studentsElements2}</div>
       </div>

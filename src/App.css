@@ -2,11 +2,22 @@
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
+.magenta {
+  background-color: rgb(167, 10, 184);
+}
+.blue {
+  background-color: rgb(8, 143, 152);
+}
+.con
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -30,7 +41,6 @@
 }
 
 .container {
-  background-color: rgb(167, 10, 184);
   max-width: 600px;
   padding: 10px 20px 20px;
   border-radius: 12px;
