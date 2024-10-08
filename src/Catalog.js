@@ -2,10 +2,7 @@ import Section from "./Section";
 
 const Catalog = (props) => {
   const studentsElements = props.studentsArray.map((element, index) => (
-    <Section
-      number={index + 1}
-      student={element}
-    />
+    <Section key={element} number={index + 1} student={element} />
   ));
 
   return (
