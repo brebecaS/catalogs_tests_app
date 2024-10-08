@@ -9,9 +9,15 @@ const App2 = () => {
     <div className="wrapper">
       <h1>Catalogs</h1>
 
-      <Catalog studentsArray={studentsList1} />
+      <Catalog
+        studentsArray={studentsList1}
+        title={"First Catalog"}
+      />
 
-      <Catalog studentsArray={studentsList2} />
+      <Catalog
+        studentsArray={studentsList2}
+        title={"Second Catalog"}
+      />
     </div>
   );
 };
