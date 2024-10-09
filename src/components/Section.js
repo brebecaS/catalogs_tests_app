@@ -1,9 +1,9 @@
-const Section = (props) => {
+const Section = ({ number, student }) => {
   return (
     <section>
       <div className="closed">
         <h4>
-          {props.number}.{props.student}
+          {number}.{student}
         </h4>
       </div>
     </section>

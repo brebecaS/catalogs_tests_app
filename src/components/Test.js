@@ -1,14 +1,14 @@
 import Question from "./Question";
 import React from "react";
 
-const Test = (props) => {
-  const mathQuestionElements = props.questionsList.map((element, index) => {
+const Test = ({ questionsList, title }) => {
+  const mathQuestionElements = questionsList.map((element, index) => {
     return <Question key={element} questionText={element} index={index} />;
   });
 
   return (
     <div className="container blue">
-      <h2>{props.title}</h2>
+      <h2>{title}</h2>
       {mathQuestionElements}
     </div>
   );

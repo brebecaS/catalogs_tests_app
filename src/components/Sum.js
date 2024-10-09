@@ -1,7 +1,7 @@
-const Sum = (props) => {
+const Sum = ({ a, b }) => {
   return (
     <div>
-      {props.a} + {props.b} = {props.a + props.b}
+      {a} + {b} = {a + b}
     </div>
   );
 };

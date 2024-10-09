@@ -1,7 +1,7 @@
-const Question = (props) => {
+const Question = ({ index, questionText }) => {
   const blackBackgroundStyle = {
-    backgroundColor: props.index === 0 ? "black" : "white",
-    color: props.index === 0 ? "white" : "black",
+    backgroundColor: index === 0 ? "black" : "white",
+    color: index === 0 ? "white" : "black",
   };
   //   let blackBackgroundStyle;
   //   if (props.index === 0) {
@@ -19,7 +19,7 @@ const Question = (props) => {
     >
       <section>
         <div style={blackBackgroundStyle} className="closed">
-          <h4>{props.questionText}</h4>
+          <h4>{questionText}</h4>
           <button>+</button>
           <p className="hide">7</p>
         </div>
