@@ -1,7 +1,7 @@
 const Question = (props) => {
   return (
     <div className="questions">
-      <section>
+      <section style={{}}>
         <div className="closed">
           <h4>{props.questionText}</h4>
           <button>+</button>
@@ -11,4 +11,5 @@ const Question = (props) => {
     </div>
   );
 };
+
 export default Question;
