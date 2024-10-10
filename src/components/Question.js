@@ -21,7 +21,7 @@ const Question = ({ index, questionText }) => {
         <div style={blackBackgroundStyle} className="closed">
           <h4>{questionText}</h4>
           <button>+</button>
-          <p className="hide">7</p>
+          <p>7</p>
         </div>
       </section>
     </div>

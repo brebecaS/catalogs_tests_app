@@ -11,14 +11,15 @@ import {
 const App2 = () => {
   return (
     <div className="wrapper">
-      <h1>Catalogs</h1>
-
-      <Catalog studentsArray={students1} title={"First Catalog"} />
-
       <h1>Teste</h1>
 
       <Test questionsList={mathQuestions} title={"Math Test"} />
       <Test questionsList={historyQuestions} title={"History Test"} />
+
+      <h1>Catalogs</h1>
+
+      <Catalog studentsArray={students1} title={"First Catalog"} />
+      <Catalog studentsArray={students2} title={"Second Catalog"} />
     </div>
   );
 };

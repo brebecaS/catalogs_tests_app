@@ -7,7 +7,13 @@ export const studentsList1 = [
   { name: "Ana", grade: 4 },
 ];
 
-export const studentsList2 = ["Beca", "A Stefan", "Cata", "Mircea", "Cata I"];
+export const studentsList2 = [
+  { name: "Beca", grade: 2 },
+  { name: "A Stefan", grade: 2 },
+  { name: "Cata", grade: 9 },
+  { name: "Mircea", grade: 9 },
+  { name: "Cata I", grade: 6 },
+];
 
 export const mathQuestions = [
   "2 + 5 = ?",
