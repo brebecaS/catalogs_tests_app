@@ -1,4 +1,11 @@
-export const studentsList1 = ["Clau", "Cata M", "Simo", "Tudor", "George"];
+export const studentsList1 = [
+  { name: "Clau", grade: 10 },
+  { name: "Cata M", grade: 10 },
+  { name: "Simo", grade: 10 },
+  { name: "Tudor", grade: 10 },
+  { name: "George", grade: 10 },
+  { name: "Ana", grade: 4 },
+];
 
 export const studentsList2 = ["Beca", "A Stefan", "Cata", "Mircea", "Cata I"];
 

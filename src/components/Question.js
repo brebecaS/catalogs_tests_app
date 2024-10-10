@@ -3,10 +3,10 @@ const Question = ({ index, questionText }) => {
     backgroundColor: index === 0 ? "black" : "white",
     color: index === 0 ? "white" : "black",
   };
-  //   let blackBackgroundStyle;
-  //   if (props.index === 0) {
-  //     blackBackgroundStyle = { backgroundColor: "black" };
-  //   } else blackBackgroundStyle = { backgroundColor: "white" };
+  // let blackBackgroundStyle;
+  // if (index === 0) {
+  //   blackBackgroundStyle = { backgroundColor: "black" };
+  // } else blackBackgroundStyle = { backgroundColor: "white" };
 
   return (
     <div
