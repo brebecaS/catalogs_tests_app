@@ -3,7 +3,14 @@ import React from "react";
 
 const Test = ({ questionsList, title }) => {
   const mathQuestionElements = questionsList.map((element, index) => {
-    return <Question key={element} questionText={element} index={index} />;
+    return (
+      <Question
+        key={element.question}
+        questionText={element.question}
+        answer={element.answer}
+        index={index}
+      />
+    );
   });
   // some comment
   return (

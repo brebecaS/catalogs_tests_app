@@ -16,14 +16,17 @@ export const studentsList2 = [
 ];
 
 export const mathQuestions = [
-  "2 + 5 = ?",
-  "20 - 4 = ?",
-  "-9 -10 = ?",
-  "-0 -10 = ?",
+  { question: "2 + 5 = ?", answer: 7 },
+  { question: "20 - 4 = ?", answer: 16 },
+  { question: "-9 -10 = ?", answer: -19 },
+  { question: "-0 -10 = ?", answer: -10 },
 ];
 
 export const historyQuestions = [
-  "In ce an a inceput primul razboi mondial ?",
-  "In ce an a avut loc marea unire ?",
-  "Cine e fost domnitorul cu cea mai lunga domnie ?",
+  { question: "In ce an a inceput primul razboi mondial ?", answer: 1914 },
+  { question: "In ce an a avut loc marea unire ?", answer: 1918 },
+  {
+    question: "Cine e fost domnitorul cu cea mai lunga domnie ?",
+    answer: "George Cel Mare",
+  },
 ];

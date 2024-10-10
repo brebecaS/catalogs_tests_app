@@ -1,4 +1,4 @@
-const Question = ({ index, questionText }) => {
+const Question = ({ index, questionText, answer }) => {
   const blackBackgroundStyle = {
     backgroundColor: index === 0 ? "black" : "white",
     color: index === 0 ? "white" : "black",
@@ -18,10 +18,13 @@ const Question = ({ index, questionText }) => {
       }}
     >
       <section>
-        <div style={blackBackgroundStyle} className="closed">
+        <div
+          // style={blackBackgroundStyle}
+          className="closed"
+        >
           <h4>{questionText}</h4>
           <button>+</button>
-          <p>7</p>
+          <p>{answer}</p>
         </div>
       </section>
     </div>
