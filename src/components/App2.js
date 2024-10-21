@@ -11,18 +11,18 @@ import { useState } from "react";
 
 const App2 = () => {
   const [showTable, setShowTable] = useState(`catalogs`);
+  const activeButtonStyle = {
+    backgroundColor: "green",
+    borderColor: "green",
+  };
+  const inactiveButtonStyle = {};
 
   return (
     <div className="wrapper">
       <div className={"tab"}>
         <button
           style={
-            showTable === "tests"
-              ? {
-                  backgroundColor: "green",
-                  borderColor: "green",
-                }
-              : {}
+            showTable === "tests" ? activeButtonStyle : inactiveButtonStyle
           }
           className={"tablinks"}
           onClick={() => {
@@ -33,12 +33,7 @@ const App2 = () => {
         </button>
         <button
           style={
-            showTable === "catalogs"
-              ? {
-                  backgroundColor: "green",
-                  borderColor: "green",
-                }
-              : {}
+            showTable === "catalogs" ? activeButtonStyle : inactiveButtonStyle
           }
           className={"tablinks"}
           onClick={() => {
