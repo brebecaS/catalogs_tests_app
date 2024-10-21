@@ -11,6 +11,20 @@ import {
 const App2 = () => {
   return (
     <div className="wrapper">
+      <div className={"tab"}>
+        <button
+          className={"tablinks"}
+          // onClick={}
+        >
+          Tests
+        </button>
+        <button
+          className={"tablinks"}
+          // onClick={}
+        >
+          Catalogs
+        </button>
+      </div>
       <h1>Teste</h1>
 
       <Test questionsList={mathQuestions} title={"Math Test"} />

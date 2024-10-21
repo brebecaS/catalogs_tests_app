@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Question = ({ index, questionText, answer }) => {
-  function handleClick() {}
+  const [showAnswer, setShowAnswer] = useState(false);
 
   return (
     <div className="questions">
@@ -9,10 +9,22 @@ const Question = ({ index, questionText, answer }) => {
         <div className="closed" style={{ display: "block" }}>
           <div>
             <h4>{questionText}</h4>
-            <button onClick={handleClick}>+</button>
+            <button
+              onClick={() => {
+                if (showAnswer === false) {
+                  setShowAnswer(true);
+                }
+                if (showAnswer === true) {
+                  setShowAnswer(false);
+                }
+                // setShowAnswer(!showAnswer);
+              }}
+            >
+              {showAnswer === true ? "-" : "+"}
+            </button>
           </div>
 
-          <p className={"hide"}>
+          <p className={showAnswer === true ? "" : "hide"}>
             Raspuns:
             {answer}
           </p>
