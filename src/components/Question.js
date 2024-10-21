@@ -1,21 +1,7 @@
 import { useState } from "react";
 
 const Question = ({ index, questionText, answer }) => {
-  const [isHidden, setIsHidden] = useState(true); // isHidden =false
-  const [buttonSign, setButtonSign] = useState("+");
-
-  function handleClick() {
-    if (isHidden === true) {
-      setIsHidden(false);
-      setButtonSign("-");
-    } else {
-      setIsHidden(true);
-      setButtonSign("+");
-    }
-    // setIsHidden(!isHidden); //true =>  !true => false
-    // false => !false => true
-    // setIsHidden((previousValue) => !previousValue);
-  }
+  function handleClick() {}
 
   return (
     <div className="questions">
@@ -23,10 +9,10 @@ const Question = ({ index, questionText, answer }) => {
         <div className="closed" style={{ display: "block" }}>
           <div>
             <h4>{questionText}</h4>
-            <button onClick={handleClick}>{buttonSign}</button>
+            <button onClick={handleClick}>+</button>
           </div>
 
-          <p className={isHidden === true ? "hide" : ""}>
+          <p className={"hide"}>
             Raspuns:
             {answer}
           </p>
