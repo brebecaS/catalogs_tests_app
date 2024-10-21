@@ -10,7 +10,8 @@ import {
 import { useState } from "react";
 
 const App2 = () => {
-  const [showTable, setShowTable] = useState(`tests`);
+  const [showTable, setShowTable] = useState(`catalogs`);
+
   return (
     <div className="wrapper">
       <div className={"tab"}>
@@ -31,19 +32,23 @@ const App2 = () => {
           Catalogs
         </button>
       </div>
-      <div className={showTable === `tests` ? `` : `hide`}>
-        <h1>Teste</h1>
+      {showTable === "tests" && (
+        <div>
+          <h1>Teste</h1>
 
-        <Test questionsList={mathQuestions} title={"Math Test"} />
-        <Test questionsList={historyQuestions} title={"History Test"} />
-      </div>
+          <Test questionsList={mathQuestions} title={"Math Test"} />
+          <Test questionsList={historyQuestions} title={"History Test"} />
+        </div>
+      )}
 
-      <div className={showTable === `catalogs` ? `` : `hide`}>
-        <h1>Catalogs</h1>
+      {showTable === "catalogs" && (
+        <div>
+          <h1>Catalogs</h1>
 
-        <Catalog studentsArray={students1} title={"First Catalog"} />
-        <Catalog studentsArray={students2} title={"Second Catalog"} />
-      </div>
+          <Catalog studentsArray={students1} title={"First Catalog"} />
+          <Catalog studentsArray={students2} title={"Second Catalog"} />
+        </div>
+      )}
     </div>
   );
 };
