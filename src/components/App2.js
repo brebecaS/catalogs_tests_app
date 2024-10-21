@@ -16,6 +16,14 @@ const App2 = () => {
     <div className="wrapper">
       <div className={"tab"}>
         <button
+          style={
+            showTable === "tests"
+              ? {
+                  backgroundColor: "green",
+                  borderColor: "green",
+                }
+              : {}
+          }
           className={"tablinks"}
           onClick={() => {
             setShowTable(`tests`);
@@ -24,6 +32,14 @@ const App2 = () => {
           Tests
         </button>
         <button
+          style={
+            showTable === "catalogs"
+              ? {
+                  backgroundColor: "green",
+                  borderColor: "green",
+                }
+              : {}
+          }
           className={"tablinks"}
           onClick={() => {
             setShowTable(`catalogs`);
